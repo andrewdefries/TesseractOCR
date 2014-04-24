@@ -1,13 +1,14 @@
-gsutil cp gs://pesticides2crunch/diybookscanner/PesticideManual/Batch1/*.jpg .
+#gsutil cp gs://pesticides2crunch/diybookscanner/PesticideManual/Batch1/*.jpg .
 
-for i in *.jpg
+for i in *.png
 
 
 #
 do
 ##
-convert $i $i.png
-tesseract $i.png $i.out
+#convert $i $i.png
+
+tesseract $i $i.out
 #tesseract $i.png $i.out hocr
 
 ##

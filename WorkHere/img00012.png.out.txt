@@ -1,0 +1,70 @@
+® diclofop-methyl
+CAS RN I 5 I 338'2 7 '3} unstated stereochemistry;
+
+(S)-isomer. Development code Hoe 023408. ["283-65-3] (kyisomcr; I 7502"72'°/
+
+PHYSICO-CHEMICAL PROPERTIES
+dtclofop
+
+Mol.wt. 327.2 Mol.fonnula c,,H,,c1zo‘
+pKa 3.2
+
+diclofop-methyl
+® Composition TC grade is 293% pure_
+Mol. wt. 341.2 Mol. formula C61-l C10
+F°"“ C°1°ur1esscrystals- M-p-l39'—‘41 ici B.p. 150°C/760 mmHg vp 025 ®
+1)  ac   9 . . . .
+® m a1( )_ 7 mpa (50 C) (vapour pressure balance). SG/density 1.30 (40 °C)
+Kow 0gP — 4.5775. Solubility In water 0.8 mg/l (pH 5 7 20 °C) In acct
+dichloromethane, dimethyl sulfoxide, ethyl acetate toluene > 5()()- in 1 i th 1 one’
+148, methanol 120, iS0pf0panol 51 n-hexane 50 (all in g/l at 20 °C) pSotri,lTilit);!eSnt(:1tEl‘y‘t:°l
+’ - e o
+
+liht.I t,DT 25° .
+150 °C)‘ Wa er so( C) 363 d (pH 5), 31.7 d (pH 7), 0.52 d (pH 9). Flash point
+
+COMMERCIALISATION
+
+® History Herbicidal activity of diclofop-methyl reported by . . . . Patents DE 2136828‘ DE
+2223894 Manufacturer AgrEvo. ‘
+
+ 
+
+13 Header (using the derived common name when available) for data relating to the derived (in this case, ester) fonn.
+
+14 Molecular weight. Given to one decimal place.
+
+15 Molecular formula. Given in the order C,H, alphabetical.
+
+16 pKa. Acid dissociation constant (ﬁctional data).
+
+17 Composition. Purity of technical grade, isomer composition etc.
+
+18 Form: The physical form, appearance and odour (if any) of the active ingredient.
+
+19 Melting point.
+
+20 Boiling point. (Fictional data).
+
+21 Vapour pressure.
+
+22 Speciﬁc gravity, density, relative density of bulk density.
+
+23 Partition coefficient between n-octanol and water. Where this is a log value, this is indicated.
+
+24 Solubility. Units are not repeated after every value, but may be found in parentheses at the end of a sentence,
+
+with other data, where available such as the temperature, the pH (for solubility in water) and the method used.
+
+25 Flash point (ﬁctional data). _
+26 No parent or derivative header. It is not appropn
+
+derived fonn.
+27 Patents. WIPO country codes are used (see
+
+8
+
+ate to distinguish whether data which follows applies to pa
+
+Abbreviations and Codes).
+
