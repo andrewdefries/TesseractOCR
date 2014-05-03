@@ -1,0 +1,58 @@
+Guide to Using the Main Entries
+
+Sample Page
+
+The example em
+
+'llustrates a substance which is used in its ester fonn, but which receives its approved common name for
+Y)’ 1 ,
+its parent (acid) form.
+
+t This specimen entry has been deliberately shortened and modiﬁed (some items are ﬂctitious) so that it
+_\‘ c:
+
+O\UIJ¢baIv-—-
+
+illustrates the principles. It is not the complete entry for diclofop.
+
+ 
+
+Z12 @ <IllIlCll®ll®]p (D H erbzczde @
+2-(4-aryloxyphenoxy)propionic acid 9H3
+Cl 0 O - C HCOQH
+CI @
+Note Used only as the methyl ester
+NOMENCLATURE
+@ diclofop
+@ Common name diclofop (BS1, E-ISO, (m) F-ISO, ANSI, WSSA)
+@ IUPAC name (RS)-2-[4—(2,4-dichlorophenoxy)phenoxy]propionic acid.
+C.A. name (i )-2-[4-(2,4-dichlorophenoxy)phenoxy]propanoic acid.
+@ CAS RN [40843-25-2] unstated stereochemistry. Development code Hoe 021079.
+® Ofﬁeial code OMS 9999. Other name Oname. ‘ ®
+
+Entry header: The preferred name for the active ingredient parent molecule. For details see the following pages.
+Entry number.
+
+Class. For details see the following pages.
+
+Chemical structure for the parent molecule.
+
+Header (using the common name when available) for data relating to the parent (in this case, acid) form.
+
+The data in parentheses list those standards organisations that have approved the preceding common name. See the
+abbreviations section for the meaning ofthe acronyms.
+
+ICIIJPAC name. The systematic chemical name according to the rules of the Intemational Union of Pure and Applied
+icmistry. -
+
+Chemical Abstracts name. The systematic chemical name according to the rules of the 9th Collective Index period of the
+Chemical Abstracts Service. .
+
+Chemical Abstracts Service Registry Number.
+Development code.
+
+Official code (fictional data).
+Other names (fictional data).
+
+ix
+
