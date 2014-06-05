@@ -1,0 +1,54 @@
+203
+
+dicamba-dimethylammonium
+Acute oral LD5o for rats 2629 mg/kg.
+
+dicamba-sodium
+Acute oral LD50 for rats 6764 mg/ kg.
+
+ECOTOXICOLOGY
+
+dicamba
+
+Birds Acute oral LD5o for mallard ducks 2000 mg/ kg. Eight-day dietary LC5o for mallard
+ducks and bobwhite quail > 10000 mg/kg diet. Fish LCSO (96 h) for rainbow trout and
+bluegill sunﬁsh 135 mg/1. Bees Not toxic to bees. Daphnia EC” (48 h) 110 mg/l.
+
+ENVIRONMENTAL FATE
+
+Animals In mammals, following oral administration, dicamba is rapidly eliminated in the
+urine, partly as a glycine conjugate. Plants The degradation rate in plants varies greatly
+with species. In wheat, the major metabolite is 5-hydroxy-2~methoxy-3,6-dichlorobcnzoic
+acid, whilst 3,6—dichlorosalicylic acid is also a metabolite. Soil and water In soil,
+microbial degradation occurs, the principal metabolite being 3,6—dichlorosalicylic acid.
+Under conditions amenable to rapid metabolism, DT50 < 14 d. K0, = 2.
+
+dichlobenil
+
+Herbicide
+
+ 
+
+CN
+CI Cl
+
+NOMENCLATURE
+Common name dichlobenil (BS1, E-ISO, (m) F-ISO, ANSI, WSSA), DBN (JMAF).
+
+IUPAC name 2,6-dichlorobenzonitrile.
+C.A. name 2,6-dichlorobenzonitrile. CAS RN [I194-65-6] Development code H 133.
+
+PHYSICO~CHEMICAL PROPERTIES
+Composition Tech. grade dichlobenil is 298% pure.
+
+Mol. wt. 172.0 Mol. formula C7H3Cl2N .
+Form Colourless crystals with an aromatic odour (tech.: off-white crystals). M.p. 145-
+
+146 °C (tech.: 139-145 °C). B.p. 270 °C/ 760 mmHg V.p. 0.088 Pa (20 °C) (gas
+saturation method) K0,, logP = 2.70 Solubility In water 18 mg/l (20 °C). In acetone,
+dioxane, xylene 50 (all in g/ 1, 8 °C). In dichloromethane 100 g/l (20 °C). Very slightly soluble
+in non-polar solvents (< 10 g/l). Stability Stable to heat, < 270 °C. Stable to. acids, but
+rapidly hydrolysed by strong alkalis to 2,6-dichlorobenzamide. Photolytic DTSO in water 15 d.
+
+ 
+

@@ -1,0 +1,56 @@
+APPLICATIONS
+Mode of action Insecticide and acaricide which kills larvae, nymphs and adults by contact
+
+and/ or stomach action; also shows some ovicidal action. See J. Drabek et al. (Recent xldv.
+Chem. Insect Control 11, 1990, p. 170). Converted by light, or in viva to the corresponding
+carbodiirnide, which is an inhibitor of mitochondrial respiration. Uses Insecticide and
+acaricide effective against phytophagous mites (Tetranychidae, Tarsonemidae),
+Aleyrodidae, Aphididae and Jassidae on cotton, various ﬁeld and fruit crops, ornamentals
+
+and vegetables. Also controls some leaf-feeding pests in cole crops (Plutella xylostella),
+soyabeans (Anticarsia gemmatalis) and cotton (Alabama argillacea). Is safe on adults of all
+
+beneﬁcial groups (Anthorcoridae, Coccinellidae, Miridae) and on adults and immature
+stages of predatory mites (Amblyseius andersoni, Typhlodromus pyri), spiders (Erigoridae,
+Lycosidae), Chrysopa camea. Non-selective to immature stages of Heteroptera
+(Anthocoridae, Miridae). Compatible with the biological control of Aleyrodidae and
+mites in glasshouses.. Formulation type SC; WP.
+
+Principal tradename ‘Pegasus’ (Ciba-Geigy), ‘Polo’ (Ciba-Geigy).
+
+A NA LY S I S
+Product analysis by glc. Residues determined by glc. Details available from Ciba-Geigy
+
+AG.
+
+MAM MALIAN TOXICOLOGY
+Acute oral LD,o for rats 2068 mg/ kg. Skin and eye Acute percutaneous LDSO for rats
+
+> 2000 mg/kg. Non-irritant to eyes and skin (rats). Inhalation LC” (4 h) for rats
+0.558 mg/l air. NOEL (90 d) rats 4, dogs 1.5 mg/kg daily.
+
+ECOTOXICOLOGY
+
+Birds Acute oral LD,o for bobwhite quail and mallard ducks > 1500 mg/ kg. Eight-day
+dietary LC” for bobwhite quail and mallard ducks > I500 mg/kg. No acute hazard under
+ﬁeld conditions. Fish LC” (96 h) for carp 0.0038, rainbow trout 0.0007, bluegill
+
+sunﬁsh 0.0013 mg/l. Bees Toxic to honeybees; LD5o (48 h) (oral) 2.1 pg/ bee; (contact)
+
+1.5 iigl bee. No signiﬁcant hazard under ﬁeld conditions. Daphnia EC“, (48 h)
+< 0.5 mg/ l.
+
+ENVIRONMENTAL FATE
+
+Animals Study of the adsorption, distribution and excretion in rats demonstrated that the
+major portion of the dose was excreted with the faeces. The compound is degraded to
+yield its corresponding carbodiimide, which in turn reacts with nucleophiles like water
+and fatty acids to fonn urea and fattyacid derivatives. Plants In plants, diafenthiuron
+shows a complex metabolismpattem in all crops investigated, i. e. cotton, tomatoes and
+apples. Uptake of residue activity by plants from soil is low.
+
+Soil ‘and water Diafenthiuron and its main metabolites show a strong sorptivity to soil
+particles. Degradation in soils proceeds rapidly: DT,0 < l h to 1.4 d.
+
+diafenthiuron 295
+

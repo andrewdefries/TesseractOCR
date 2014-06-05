@@ -1,0 +1,58 @@
+200
+
+for rats 20 mg/kg diet (1.5 mg/kg daily); for dogs 200 mg/kg (6.6 mg/kg daily).
+Toxicity class WHO III; EPA III.
+
+ECOTOXICOLOGY
+
+Birds LC” (8 d) for Japanese quail > 10000 mg/ kg. Fish LC” (96 h) for rainbow trout
+2.2, common carp 37 mg/l. Bees Not toxic to bees; LD5o (oral) > 197 pg} bee, (topical)
+
+> 101 pg/bee. Daphnia EC5o (48 h) 45 mg/l. Other beneﬁcial spp. LC5o (14 d) for
+earthworms 160 mg/ kg soil.
+
+ENVIRONMENTAL FATE
+
+Animals Major pathways in animal metabolism are hydrolysis of the methylthio group to
+form the hydroxy derivative, sulfoxidation of the methylthio group, and side-chain
+dealkylation. Plants Major pathways in plant metabolism are the hydrolysis of the
+methylthio group to form the hydroxy derivative, conjugation with glutathione and side-
+chain dealkylation. Soil and water Degradation involves oxidation of the methylthio
+group to sulfoxide and sulfone, hydrolysis with the introduction of a 2-hydroxy group,
+dealkylation at the substituted amino groups, cleavage of the amine moiety, and ring
+opening. Duration of residual activity in soil is c. 3 months. KO, 150.
+
+ 
+
+d18.f€I1lLhI111‘OI1 Insecticide Acaricide
+CH(CH3)2
+ O NHCSNHC(CH3)3
+CH(CH3)2
+NOMENCLATURE
+
+Common name diafenthiuron (BSI, draft E-ISO).
+
+IUPAC name 1-tert-butyl-3-(2,6-di-isopropyl-4-phenoxyphenyl)thiourea.
+
+C.A. name N-[2,6-bis(1-methylethyl)-4-phenoxyphenyl]-N’-(1,1-dimethylethyl)thiourca.
+CAS RN [80060—09-9] Development code CGA 106 630.
+
+PHYSICO-CHEMICAL PROPERTIES
+
+Mol. wt. 384.6 Mol. formula C23H32N2OS
+
+Form White powder. M.p. 144.6-147.7 °c (OECD 102) V.p. < 2 x 10-‘ Pa (25 "C)
+(OECD 104) SG/density 1.09 (20 °C) (OECD 109) K... logP = 5.76 (OECD 107)
+Solubility In water 0.06 mg/ l (25 °C). In ethanol 43, acetone 320, toluene 330,.n-hexane
+9.6, n-octanol 26 (all in g/l, 25 °C). Stability Stable in air and water and to light.
+
+COMMERCIALISATION
+History Insecticide and acaricide reported by H. P. Streibert et al. (Proc. 1988 Br. Crop
+
+Prot Conf. 1, 25). Introduced by Ciba-Geigy AG. Patents GB 2060626; DE 3034905
+Manufacturer Ciba-Geigy.
+
+294 diafenthiuron
+
+ 
+

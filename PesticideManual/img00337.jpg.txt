@@ -1,0 +1,66 @@
+COMMERCIALISATION
+History Herbicidal properties reported by H. Koopman & J. Daams (Nature [London].
+
+1960, 186, 89). Introduced by Philips-Duphar B.V. (now Solvay Duphar B.V.).
+Patents NL 572662; US 3027248 Manufacturer Cyanamid; Solvay Duphar.
+
+APPLICATIONS . . . _ _
+Mode 01’ action Systemic herbicide which acts by inhibition of cellulose synthesis of
+
+actively growing plant tissue. Inhibits actively dividing meristems, germination of seeds
+and damages rhizomes. Its selectivity can be ascribed to the fact that it is bound to the
+top 5-10 cm of the soil. Uses For selective weed control of annual and many perennial
+weeds in woody omamentals, fruit orchards, vineyards, bush fruit, forest plantations,
+public green areas at dosages between 2.7 and 5.4 kg a.i./ ha. For total weed control in
+non-crop areas at dosages up to 13.5 kg a.i./ ha. Control of ﬂoating, emergent or
+submerged aquatic plant growth in non-ﬂowing water at 2.7-8.1 kg/ ha, depending on
+water depth. Phytotoxicity Some conifers are susceptible to dichlobenil vapour due to
+their bark structure. Formulation type GR; WP. Compatibility Wettable-powder
+formulation is compatible with other wettable-powder herbicides.
+
+Principal tradename ‘Casoron’ (Solvay Duphar), ‘Barrier’ (PBI/ Gordon), ‘Silbenil’
+(Siapa). Mixtures [dichlobenil +] simazine; diuron.
+
+A NA LYSIS
+Product analysis by glc with FID (CIPAC Handbook, 1983, 1B, 1769; AOAC Methods,
+
+1990, 979.03; A. van Rossum, Anal. Methods Pestic. Plant Growth Regul., 1978, 10, 311)
+
+or by spectrometry. Residues determined by glc (K. I. Beynon et al., J. Sci. Food Agric.,
+l966,17,151).
+
+MAMMALIAN TOXICOLOGY
+
+Acute oral LD,o for rats 4460, male mice 1014, female mice 1621 mg/kg.
+
+Skin and eye Acute percutaneous LD5o for albino rabbits > 2000 mg/kg. Non-irritating to
+skin (rabbits). Inhalation LC” (4 h) for rats > 250 mg/m3. NOEL (2 y) for rats
+
+50 mg/ kg diet. In 2-generation feeding study for rats NOEL 60 mg/ kg diet.
+
+ADI 0.025 mg/kg b.w. Toxicity class WHO Table 5; EPA III. Other Acute i.p. LD50
+for female mice 603 mg/kg.
+
+ECOTOXICOLOGY
+Birds Eight-day dietary LC” for bobwhite quail c. 5200, mallard ducks > 5200 mg/ kg
+dict. Fish LC” (96 h) 5-13 mg/I (various ﬁsh species). Bees Not toxic to bees; LD50
+
+(contact) >11 pg/bee. Daphnia EC” (48 h) 6.2 mg/l. Other beneﬁcial spp. LD50 for
+earthworms > 1000 m g/kg substrate. Harmless to carabids. No effect on soil microﬂora.
+
+ENVIRONMENTAL FATE
+
+Aninials Mctabolised and excreted mainly as hydroxylated conjugates. For fate in animals,
+sec Ix. I. Beynon and A. N. Wright Residue Rev. 1972, 43, 23; A. Verloop ibid. 1972, 43,
+
+55. Plants The soil metabolite 2,6-dichlorobenzamide can be taken up by plants via the
+roots. Plant metabolism involves ring hydroxylation (at the 3-position and, to a lesser
+extent. at the 4-position) of both dichlobenil and 2,6-dichlorobenzamide and subsequent]
+c\()n\}"'iigl:ition£s_1L;h a sugar. See K. I. Beynon and A. N. Wright Residue Rev. 1972, 43, 23; y
+1.. er oopi z . 197-, 43, 55. Soil and water Has a low leaching potential. In soil,
+dichlobenil gradually undergoes microbial degradation to 2 6-dichlorobenzamide which
+
+dichlobenil 301
+
+"1a:ia‘1d1‘1 1,1 1 _1LJ_1_1 I I 3 I D II ll 01 A 
+
