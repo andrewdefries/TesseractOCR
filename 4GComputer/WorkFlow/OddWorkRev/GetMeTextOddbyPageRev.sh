@@ -18,7 +18,7 @@ while [ $remainder_val -gt 0 ]
 
 do
 ############
-remainder=(`cat OddWorkList`)
+remainder=(`cat OddWorkListRev`)
 ############
 for i in "${remainder[@]}"
 do

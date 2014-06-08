@@ -1,3 +1,4 @@
+rm *.jpg
 rm RunLog
 #
 gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g'| sed 's/.jpg//g' > WorkList
@@ -36,7 +37,7 @@ gsutil -m cp gs://books_batch5/ThePesticideManualNoMore/$i.jpg .
 echo $i >> RunLog
 convert $i.jpg -crop 3772x2640+356+76 $i.crop.jpg 
 #convert $i.jpg -crop $xcropx$ycrop+$xoffset+$yoffset $i.crop.jpg 
-convert -rotate 90 $i.crop.jpg $i.rotated.jpg
+convert -rotate -90 $i.crop.jpg $i.rotated.jpg
 rm $i.crop.jpg
 ./textcleaner.sh -g -e stretch -f 25 -o 5 -s 1 $i.rotated.jpg $i.ready.jpg
 rm $i.rotated.jpg
@@ -49,6 +50,7 @@ gsutil -m cp $i.html gs://the_pesticide_manual
 gsutil -m cp $i.pdf gs://the_pesticide_manual
 gsutil -m cp $i.ready.jpg gs://the_pesticide_manual
 ######
+rm $i.ready.jpg
 rm $i.pdf
 rm $i.txt
 rm $i.html
