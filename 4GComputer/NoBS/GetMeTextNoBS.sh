@@ -13,6 +13,8 @@ tesseract $i $i.txt
 
 cat $i.txt | sed -n "/[a-z A-Z]/p" | wc -w > wordcount
 
+#also consider comparing $i.txt to a file containing unigrams via comm
+
 wordcount=(`cat wordcount | cut -c 1-2`) 
 
 if [ $wordcount -eq 0 ]
