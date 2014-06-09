@@ -1,13 +1,13 @@
 rm *.jpg
 rm RunLog
 #
-gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g'| sed 's/.jpg//g' > WorkList
+gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
 touch DoneList
-gsutil -m ls gs://the_pesticide_manual/*.txt | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.txt//g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
-cat RemainderList | sed -n '/.*[02468]/p' > EvenWorkList
-cat RemainderList | sed -n '/.*[13579]/p' > OddWorkList
+cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' > EvenWorkList
+cat RemainderList | sed -n '/.*[13579]\.jpg/p' | sed 's/.jpg//g' > OddWorkList
 ######
 remainder_val=(`cat RemainderList | wc | cut -c 4-8`)
 #xcrop=(`cat xcrop`)
@@ -24,12 +24,12 @@ remainder=(`cat OddWorkList`)
 for i in "${remainder[@]}"
 do
 ######
-gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g'| sed 's/.jpg//g' > WorkList
-gsutil -m ls gs://the_pesticide_manual/*.txt | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.txt//g'  > DoneList 
+gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
-cat RemainderList | sed -n '/.*[02468]/p' > EvenWorkList
-cat RemainderList | sed -n '/.*[13579]/p' > OddWorkList
+cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' > EvenWorkList
+cat RemainderList | sed -n '/.*[13579]\.jpg/p' | sed 's/.jpg//g' > OddWorkList
 ######
 ######
 gsutil -m cp gs://books_batch5/ThePesticideManualNoMore/$i.jpg .
@@ -37,7 +37,7 @@ gsutil -m cp gs://books_batch5/ThePesticideManualNoMore/$i.jpg .
 echo $i >> RunLog
 convert $i.jpg -crop 3772x2640+356+76 $i.crop.jpg 
 #convert $i.jpg -crop $xcropx$ycrop+$xoffset+$yoffset $i.crop.jpg 
-convert -rotate -90 $i.crop.jpg $i.rotated.jpg
+convert -rotate 90 $i.crop.jpg $i.rotated.jpg
 rm $i.crop.jpg
 ./textcleaner.sh -g -e stretch -f 25 -o 5 -s 1 $i.rotated.jpg $i.ready.jpg
 rm $i.rotated.jpg

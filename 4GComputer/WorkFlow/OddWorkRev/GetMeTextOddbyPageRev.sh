@@ -1,12 +1,12 @@
 rm RunLog
 #
-gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g'| sed 's/.jpg//g' > WorkList
+gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
 touch DoneList
-gsutil -m ls gs://the_pesticide_manual/*.txt | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.txt//g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
-cat RemainderList | sed -n '/.*[02468]/p' | sed '1!G;h;$!d' | cut -c 1-9 > EvenWorkListRev
-cat RemainderList | sed -n '/.*[13579]/p' | sed '1!G;h;$!d' | cut -c 1-9 > OddWorkListRev
+cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > EvenWorkListRev
+cat RemainderList | sed -n '/.*[13579]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > OddWorkListRev
 ######
 remainder_val=(`cat RemainderList | wc | cut -c 4-8`)
 #xcrop=(`cat xcrop`)
@@ -23,12 +23,12 @@ remainder=(`cat OddWorkListRev`)
 for i in "${remainder[@]}"
 do
 ######
-gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g'| sed 's/.jpg//g' > RevWorkList
-gsutil -m ls gs://the_pesticide_manual/*.txt | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.txt//g'  > RevDoneList 
+gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > RevWorkList
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 RevWorkList RevDoneList > RevRemainderList
 ######
-cat RevRemainderList | sed -n '/.*[02468]/p' | sed '1!G;h;$!d' | cut -c 1-9 > EvenWorkListRev
-cat RevRemainderList | sed -n '/.*[13579]/p' | sed '1!G;h;$!d' | cut -c 1-9 > OddWorkListRev
+cat RevRemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > EvenWorkListRev
+cat RevRemainderList | sed -n '/.*[13579]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > OddWorkListRev
 ######
 ######
 gsutil -m cp gs://books_batch5/ThePesticideManualNoMore/$i.jpg .
