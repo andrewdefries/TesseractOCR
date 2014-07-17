@@ -41,6 +41,13 @@ convert -rotate 90 $i.crop.jpg $i.rotated.jpg
 rm $i.crop.jpg
 ./textcleaner.sh -g -e stretch -f 25 -o 5 -s 1 $i.rotated.jpg $i.ready.jpg
 rm $i.rotated.jpg
+######
+convert $i.ready.jpg $i.ready.pnm
+potrace $i.ready.pnm -s
+convert $i.ready.svg $i.ready.jpg
+rm $i.ready.pnm
+rm $i.ready.svg
+######
 tesseract $i.ready.jpg $i
 tesseract $i.ready.jpg $i hocr
 hocr2pdf -i $i.ready.jpg -o $i.pdf < $i.html
