@@ -51,10 +51,10 @@ tesseract $i.ready.jpg $i
 tesseract $i.ready.jpg $i hocr
 hocr2pdf -i $i.ready.jpg -o $i.pdf < $i.html
 ######
-gsutil -m cp $i.txt gs://the_pesticide_manual
-gsutil -m cp $i.html gs://the_pesticide_manual
-gsutil -m cp $i.pdf gs://the_pesticide_manual
-gsutil -m cp $i.ready.jpg gs://the_pesticide_manual
+gsutil -m cp $i.txt gs://the_pesticide_manual_ocr0
+gsutil -m cp $i.html gs://the_pesticide_manual_ocr0
+gsutil -m cp $i.pdf gs://the_pesticide_manual_ocr0
+gsutil -m cp $i.ready.jpg gs://the_pesticide_manual_ocr0
 ######
 rm $i.pdf
 rm $i.txt
