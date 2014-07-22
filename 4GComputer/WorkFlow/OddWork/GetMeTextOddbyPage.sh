@@ -3,7 +3,7 @@ rm RunLog
 #
 gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
 touch DoneList
-gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual_ocr0\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
 cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' > EvenWorkList
@@ -25,7 +25,7 @@ for i in "${remainder[@]}"
 do
 ######
 gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
-gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual_ocr0\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
 cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' > EvenWorkList
@@ -46,7 +46,7 @@ convert $i.ready.jpg $i.ready.pnm
 potrace $i.ready.pnm -s
 convert $i.ready.svg $i.ready.jpg
 rm $i.ready.pnm
-rm $i.ready.svg
+#rm $i.ready.svg
 ######
 tesseract $i.ready.jpg $i
 tesseract $i.ready.jpg $i hocr
@@ -56,12 +56,14 @@ gsutil -m cp $i.txt gs://the_pesticide_manual_ocr0
 gsutil -m cp $i.html gs://the_pesticide_manual_ocr0
 gsutil -m cp $i.pdf gs://the_pesticide_manual_ocr0
 gsutil -m cp $i.ready.jpg gs://the_pesticide_manual_ocr0
+gsutil -m cp $i.ready.svg gs://the_pesticide_manual_ocr0
 ######
 rm $i.ready.jpg
 rm $i.pdf
 rm $i.txt
 rm $i.html
 rm $i.jpg
+rm $i.ready.svg
 ######
 done
 ###########

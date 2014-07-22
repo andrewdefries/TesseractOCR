@@ -2,7 +2,7 @@ rm RunLog
 #
 gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > WorkList
 touch DoneList
-gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual_ocr0\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 WorkList DoneList > RemainderList
 ######
 cat RemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > EvenWorkListRev
@@ -24,7 +24,7 @@ for i in "${remainder[@]}"
 do
 ######
 gsutil -m ls gs://books_batch5/ThePesticideManualNoMore/*.jpg | sed 's/gs:\/\/books_batch5\/ThePesticideManualNoMore\///g' > RevWorkList
-gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
+gsutil -m ls gs://the_pesticide_manual/*.jpg | sed 's/gs:\/\/the_pesticide_manual_ocr0\///g'| sed 's/.ready.jpg/.jpg/g'  > DoneList 
 comm -3 RevWorkList RevDoneList > RevRemainderList
 ######
 cat RevRemainderList | sed -n '/.*[02468]\.jpg/p' | sed 's/.jpg//g' | sed '1!G;h;$!d' > EvenWorkListRev
