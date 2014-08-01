@@ -406,7 +406,81 @@ aspect=`convert xc: -format "%[fx:($hh/$ww)>=1?1:0]" info:`
 # set up rotation
 if [ "$layout" = "portrait" -a $aspect -eq 0 -a "$rotate" = "cw" ]; then
 	rotation="-rotate 90"
-el-o "$typegray" != "" ] && saturation=100
+elif [ "$layout" = "portrait" -a $aspect -eq 0 -a "$rotate" = "ccw" ]; then
+	rotation="-rotate -90"
+elif [ "$layout" = "landscape" -a $aspect -eq 1 -a "$rotate" = "cw" ]; then
+	rotation="-rotate 90"
+elif [ "$layout" = "landscape" -a $aspect -eq 1 -a "$rotate" = "ccw" ]; then
+	rotation="-rotate -90"
+else
+	rotation=""
+fi
+	
+# set up cropping
+if [ "$cropoff" != "" -a $numcrops -eq 1 ]; then
+	wwc=`convert xc: -format "%[fx:$ww-2*$crop1]" info:`
+	hhc=`convert xc: -format "%[fx:$hh-2*$crop1]" info:`
+	cropping="-crop ${wwc}x${hhc}+$crop1+$crop1 +repage"
+elif [ "$cropoff" != "" -a $numcrops -eq 2 ]; then
+	wwc=`convert xc: -format "%[fx:$ww-2*$crop1]" info:`
+	hhc=`convert xc: -format "%[fx:$hh-2*$crop2]" info:`
+	cropping="-crop ${wwc}x${hhc}+$crop1+$crop2 +repage"
+elif [ "$cropoff" != "" -a $numcrops -eq 4 ]; then
+	wwc=`convert xc: -format "%[fx:$ww-($crop1+$crop3)]" info:`
+	hhc=`convert xc: -format "%[fx:$hh-($crop2+$crop4)]" info:`
+	cropping="-crop ${wwc}x${hhc}+$crop1+$crop2 +repage"
+else
+	cropping=""
+fi
+#echo "cropoff=$cropoff; numcrops=$numcrops; cropping=$cropping"
+
+# test if grayscale
+grayscale=`convert $tmpA1 -format "%[colorspace]" info:`
+typegray=`convert $tmpA1 -format '%r' info: | grep 'Gray'`
+if [ "$gray" = "yes" -o "$grayscale" = "Gray" -o "$typegray" != "" ]; then 
+	makegray="$setcspace -colorspace gray -type grayscale"
+else
+	makegray=""
+fi
+#echo "makegray=$makegray"
+
+# set up enhance
+if [ "$enhance" = "stretch" ]; then
+	enhancing="$setcspace -contrast-stretch 0"
+elif [ "$enhance" = "normalize" ]; then
+	enhancing="$setcspace -normalize"
+else
+	enhancing=""
+fi
+#echo "enhancing=$enhancing"
+
+# setup blurring
+if [ "$threshold" = "" ]; then
+	blurring=""
+else
+	bluramt=`convert xc: -format "%[fx:$threshold/100]" info:`
+	blurring="-blur ${bluramt}x65535 -level ${threshold}x100%"
+fi
+#echo "blurring=$blurring"
+
+# set up unrotate
+if [ "$unrotate" = "yes" ]; then
+	unrotating="-background $bgcolor -deskew 40%"
+else
+	unrotating=""
+fi
+#echo "unrotating=$unrotating"
+
+# setup sharpening
+if [ "$sharpamt" = "0" -o "$sharpamt" = "0.0" ]; then
+	sharpening=""
+else
+	sharpening="-sharpen 0x${sharpamt}"
+fi
+#echo "sharpening=$sharpening"
+
+# setup modulation
+[ "$gray" = "yes" -o "$grayscale" = "Gray" -o "$typegray" != "" ] && saturation=100
 if [ $saturation -eq 100 ]; then
 	modulation=""
 else
