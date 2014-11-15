@@ -12,13 +12,9 @@ Tesseract is a freely available OCR software that can perform command line text 
 
 See the Tesseract page for more info  https://code.google.com/p/tesseract-ocr/ 
 
-Briefly, the workflow is as follows to extract text from high quality images:
-
-Take pictures of source material, pre-process using imagemagick scripts (rotate, contrast, crop), input image to tesseract. 
-
 You require a number of modules to get this workflow moving.
 
-To build Tesseract working environment do
+To build Tesseract working environment do (tested in ubuntu and debian)
 ```
 # tesseract dependencies
 sudo apt-get install autoconf automake libtool
@@ -50,6 +46,8 @@ Post Processing Workflow
 ========================
 
 ![Workflow of the Reetz book scanner](https://github.com/andrewdefries/TesseractOCR/blob/master/ReetzWorkFlow.png)
+
+Briefly, the workflow is as follows to extract text from high quality images. Take pictures of source material, pre-process using imagemagick scripts (rotate, contrast, crop), input image to tesseract. 
 
 A number of options are available to pre-process and determine the appropriate crop area. Here we use a combination of both gui and command line tools. The open source image editing tool FIJI or Fiji is Just Image J ( http://fiji.sc/wiki/index.php/Fiji) was used to determine the appropriate crop area. Since we were using tesseract locally and on the google cloud the gsutil tool was used to download a set of odd and even images for the user to determine a single crop box. The images were downloaded and the even indices where opened, made to stack, and a crop box was determined. The value was saved in a file.
 
