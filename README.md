@@ -1,7 +1,12 @@
 TesseractOCR
 ============
 
-This repo documents full text extraction from archival photos of books using the Reetz book scanner (https://www.noisebridge.net/wiki/Bookscanner).
+This repo documents full text extraction from archival photos of books using an older model fo the Daniel Reetz book scanner (https://www.noisebridge.net/wiki/Bookscanner). We are currently using custom software for the digital capture of images via usb (https://github.com/danyq/diybookscanner). Post processing is done locally or using cloud services with the open source software Tesseract.
+
+![Schematic of the Reetz book scanner](https://github.com/andrewdefries/TesseractOCR/blob/master/Reets_Scanner_schematic.png)
+
+Installing Tesseract on linux machines
+======================================
 
 Tesseract is a freely available OCR software that can perform command line text extraction from images. Tesseract also has langauge support for multiple languages. 
 
@@ -40,6 +45,9 @@ wget http://www.fmwconcepts.com/imagemagick/downloadcounter.php?scriptname=textc
 # consider getting potrace to make svg traces of images
  
 ```
+
+Post Processing Workflow
+========================
 
 A number of options are available to pre-process and determine the appropriate crop area. Here we use a combination of both gui and command line tools. The open source image editing tool FIJI or Fiji is Just Image J ( http://fiji.sc/wiki/index.php/Fiji) was used to determine the appropriate crop area. Since we were using tesseract locally and on the google cloud the gsutil tool was used to download a set of odd and even images for the user to determine a single crop box. The images were downloaded and the even indices where opened, made to stack, and a crop box was determined. The value was saved in a file.
 
