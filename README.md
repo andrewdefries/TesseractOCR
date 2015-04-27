@@ -1,6 +1,8 @@
 TesseractOCR
 ============
 
+For information on the Noisebridge email group and scanner please go to https://noisebridge.net/wiki/Digital_Archivists
+
 This repo documents full text extraction from archival photos of books using an older model of the Daniel Reetz book scanner (https://www.noisebridge.net/wiki/Bookscanner). We are currently using custom software for the digital capture of images via usb (https://github.com/danyq/diybookscanner). Post processing is done locally or using cloud services with the open source software Tesseract.
 
 ![Schematic of the Reetz book scanner](https://github.com/andrewdefries/TesseractOCR/blob/master/Reetz_Scanner_Schematic.png)
