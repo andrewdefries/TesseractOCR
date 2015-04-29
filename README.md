@@ -113,3 +113,8 @@ hocr2pdf -i $i.ready.jpg -o $i.pdf < $i.html
 ######
 ```
 
+Software Updates
+=======
+The folder CustomCrop contains some scripts to multi-thread the OCR session, now for 4 cores. Have to replace some values with system variables such as working directory and number of cores.
+
+
